@@ -7,9 +7,7 @@ app.get('/', (req,res) => {
   res.send("Hello Word")
 })
 
-
-
 // Server Listener
-app.listen(8080, ()=> {
+app.listen(process.env.PORT || 5000, ()=> {
   console.log("Server is Listening on port 8080")
 })
