@@ -4,7 +4,8 @@
   "description": "- This is a e-commerce site for a people who can't sell their products.  - We Sell, We Buy npm install cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
