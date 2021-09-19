@@ -2,7 +2,7 @@
   "name": "khurraak",
   "version": "1.0.0",
   "description": "- This is a e-commerce site for a people who can't sell their products.  - We Sell, We Buy npm install cypress",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js"
