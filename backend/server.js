@@ -12,7 +12,9 @@ app.get('/', (req,res) => {
 
 })
 
-
+app.get('/accounts/login', (req,res) => {
+  res.sendFile(path.join(__dirname+'/public/login.html'));
+})
 
 // Server Listener
 app.listen(8080, ()=> {
