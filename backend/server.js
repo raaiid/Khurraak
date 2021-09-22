@@ -12,6 +12,10 @@ app.get('/', (req,res) => {
 
 })
 
+app.get('/accounts/login', (req,res) => {
+  res.sendFile(path.join(__dirname+'/public/login.html'));
+})
+
 // Server Listener
 app.listen(process.env.PORT || 5000, ()=> {
   console.log("Server is Listening on port 8080")
