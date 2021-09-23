@@ -30,6 +30,12 @@ app.get('/card/:id',async (req,res) => {
 })
 
 
+app.get('/settings/',async (req,res) => {
+  res.send("UNDER CONSTRUCTION")
+})
+
+
+
 
 
 // Server Listener
