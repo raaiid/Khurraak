@@ -2,6 +2,16 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const path = require('path')
+const Pool = require('pg').Pool
+const pool = new Pool({
+  user : 'root',
+  host: 'localhost',
+  database: 'mungwalo',
+  password: 'joker231',
+  port: '5432'
+})
+
+
 app.use(express.json())
 var publicDir = require('path').join(__dirname,'/public/static');
 app.use(express.static(publicDir));
@@ -14,6 +24,11 @@ app.get('/', (req,res) => {
 
 app.get('/accounts/login', async (req,res) => {
   res.sendFile(path.join(__dirname+'/public/login.html'));
+
+})
+
+app.post('/accounts/login', async (req,res) => {
+
 })
 
 app.get('/accounts/signup', async (req,res) => {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vuikit.css" />
+    <script src="vuikit.js"></script>
+    <script src="js/vuikit.min.js"></script>
+    <script src="js/vuikit-icons.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <vk-navbar>
+        <vk-navbar-nav>
+          <vk-navbar-nav-item title="Active" active>Home</vk-navbar-nav-item>
+          <vk-navbar-nav-dropdown title="Parent">
+            <vk-navbar-nav-dropdown-nav>
+              <vk-nav-item title="Active" active>HOME</vk-nav-item>
+              <vk-nav-item title="Item">asdsa</vk-nav-item>
+              <vk-nav-item title="Item">asdasd</vk-nav-item>
+            </vk-navbar-nav-dropdown-nav>
+          </vk-navbar-nav-dropdown>
+          <vk-navbar-nav-item title="Item">asdasds</vk-navbar-nav-item>
+        </vk-navbar-nav>
+      </vk-navbar>  
+    </div>
+    <script>
+      new Vue({ el: '#app' })
+    </script>
+  </body>
+</html>
