@@ -4,12 +4,14 @@ const app = express()
 const path = require('path')
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user : 'root',
+  user : 'postgres',
   host: 'localhost',
   database: 'mungwalo',
   password: 'joker231',
   port: '5432'
 })
+
+
 
 
 app.use(express.json())
@@ -54,6 +56,7 @@ app.get('/settings/',async (req,res) => {
 
 
 // Server Listener
-app.listen(process.env.PORT || 5000, ()=> {
-  console.log("Server is Listening on port 8080")
+app.listen(process.env.PORT || 5000, (req,res)=> {
+  console.log(req)
+  console.log(`Server is Listening on port ${process.env.PORT}`)
 })
