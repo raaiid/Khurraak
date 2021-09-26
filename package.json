@@ -9,12 +9,16 @@
     "test": "npm start backend/server.js"
   },
   "dependencies": {
-    "express":"*",
-    "cors":"*",
+    "@vuikit/icons": "^0.8.1",
+    "@vuikit/theme": "^0.8.1",
+    "cors": "*",
+    "cypress": "*",
+    "express": "*",
+    "pg": "^8.7.1",
     "ps": "*",
-    "cypress": "*"
- },
-
+    "vue": "^2.6.14",
+    "vuikit": "^0.8.10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raaiid/Khurraak.git"
