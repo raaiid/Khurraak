@@ -30,7 +30,9 @@ app.get('/accounts/login', async (req,res) => {
 })
 
 app.post('/accounts/login', async (req,res) => {
-
+        res.send({
+          name: "Abid Gul Shahid"
+        })
 })
 
 app.get('/accounts/signup', async (req,res) => {
